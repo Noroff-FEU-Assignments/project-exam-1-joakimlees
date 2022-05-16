@@ -158,8 +158,6 @@ main {
 }
 
 .scrollmenu {
-  display: flex;
-  justify-content: space-between;
   position: relative;
 }
 
@@ -192,6 +190,11 @@ main {
 .arrow-right {
   right: 0px;
   top: 44%;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .blogpost-card {
