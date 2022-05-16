@@ -241,3 +241,10 @@ footer {
   color: white;
   border-style: solid;
 }
+
+.testclass {
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
