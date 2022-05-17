@@ -32,6 +32,7 @@ body {
 .header-content-wrapper nav ul {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
   padding: 0px;
   margin: 0px;
   align-items: center;
