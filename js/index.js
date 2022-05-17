@@ -7,11 +7,61 @@ const apiResult = await getRequest(url);
 
 console.log(apiResult);
 
-const cardWrapper = document.querySelector(".card-wrapper");
-const right = document.querySelector(".test-right");
-const left = document.querySelector(".test-left");
+console.log("-------------------------");
 
+const cardWrapper = document.querySelector(".card-wrapper");
+const rightBtn = document.querySelector(".arrow-right");
+const leftBtn = document.querySelector(".arrow-left");
+
+let count = 1;
+let rows = 3;
+
+function displayCards(cards, rows, page) {
+  console.clear();
+  page--;
+
+  let start = rows * page;
+  let end = start + rows;
+
+  let currentCards = cards.slice(start, end);
+
+  if (currentCards.length < rows) {
+    currentCards = cards.slice(-rows);
+  }
+
+  for (let i = 0; i < currentCards.length; i++) {
+    let card = currentCards[i];
+  }
+}
+
+displayCards(apiResult, rows, count);
+
+rightBtn.addEventListener("click", function pageRight() {
+  let test = count;
+  if (count >= apiResult.length / rows) {
+    test = apiResult.length / rows;
+  } else {
+    test = count += 1;
+  }
+
+  displayCards(apiResult, rows, test);
+});
+
+leftBtn.addEventListener("click", function pageLeft() {
+  let test2 = count;
+
+  if (count < 2) {
+    test2 = 1;
+  } else {
+    test2 = count -= 1;
+  }
+
+  displayCards(apiResult, rows, test2);
+});
+
+/*
 for (let i = 0; i < apiResult.length; i++) {
+  cardWrapper.innerHTML += "";
   cardWrapper.innerHTML += `
   
   <a class="blogpost-card" href="/html/posts.html?id=${apiResult[i].id}">
@@ -28,10 +78,4 @@ for (let i = 0; i < apiResult.length; i++) {
   `;
 }
 
-/*
-const test = document.querySelector(".test");
-
-for (let i = 0; i < apiResult.length; i++) {
-  test.innerHTML += `<a href="/html/posts.html?id=${apiResult[i].id}"><div>${apiResult[i].title.rendered}</div></a>`;
-}
 */
