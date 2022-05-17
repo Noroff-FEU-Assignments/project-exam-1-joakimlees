@@ -162,13 +162,14 @@ main {
   position: relative;
 }
 
-.view-all-btn {
-  display: block;
-  background: none;
-  border: none;
+.view-all-link {
+  margin: 15px 40%;
+  text-decoration: none;
+  font-family: verdana;
   color: orange;
   font-size: 28px;
-  margin: 10px auto;
+  display: block;
+  text-align: center;
 }
 
 .arrow-wrapper {
@@ -184,18 +185,20 @@ main {
 }
 
 .arrow-left {
-  top: 44%;
+  opacity: 50%;
+  top: 41.5%;
   left: 0px;
 }
 
 .arrow-right {
   right: 0px;
-  top: 44%;
+  top: 41.5%;
 }
 
 .card-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
 }
 
 .blogpost-card {
@@ -214,27 +217,28 @@ main {
 
 .card-text-wrapper {
   display: flex;
+  justify-content: space-evenly;
+  height: 225px;
   flex-direction: column;
-  align-content: center;
   text-align: center;
 }
 
 .card-text-wrapper h4 {
   font-size: 38px;
   color: black;
-  margin: 30px 50px 0px;
+  margin: 0px 50px;
 }
 
 .card-text-wrapper .read-card {
   font-size: 28px;
   color: purple;
-  margin: 20px 0px 0px;
+  margin: 0px;
 }
 
 .card-date {
   color: black;
   font-size: 16px;
-  margin: 20px 10px 5px;
+  margin: 0px;
 }
 
 /* Footer */

@@ -14,23 +14,26 @@ mediaMobil.addEventListener("change", function () {
   rows = 1;
   displayCards(apiResult, cardWrapper, rows, count);
 });
-*/
+
 
 mediaTest.addEventListener("change", function () {
   rows = 1;
   displayCards(apiResult, cardWrapper, rows, count);
 });
-
-console.log("-----------------------------------------------");
+*/
 
 let count = 1;
-let rows = 3;
+let rows;
 
 if (mediaTest.matches) {
   rows = 3;
 } else {
   rows = 1;
 }
+
+console.log(rows);
+
+console.log("-----------------------------------------------");
 
 const cardWrapper = document.querySelector(".card-wrapper");
 const rightBtn = document.querySelector(".arrow-right");
@@ -51,7 +54,9 @@ function displayCards(cards, container, rows, page) {
   }
 
   for (let i = 0; i < currentCards.length; i++) {
-    let card = currentCards[i];
+    const card = currentCards[i];
+    const date = card.date.slice(0, -9);
+    const updated = card.modified.slice(0, -9);
 
     container.innerHTML += `
     <a class="blogpost-card" href="/html/posts.html?id=${card.id}">
@@ -61,7 +66,7 @@ function displayCards(cards, container, rows, page) {
                 <div class="card-text-wrapper">
                   <h4>${card.title.rendered}</h4>
                   <p class="read-card">Read post</p>
-                  <p class="card-date">${card.date}</p>
+                  <p class="card-date">Published: ${date} | Last updated: ${updated}</p>
                 </div>
               </a>
 
@@ -77,8 +82,13 @@ rightBtn.addEventListener("click", function pageRight() {
   let pageInc = count;
   if (count >= apiResult.length / rows) {
     pageInc = apiResult.length / rows;
+    rightBtn.style.opacity = "50%";
   } else {
     pageInc = count += 1;
+  }
+
+  if (count > 1) {
+    leftBtn.style.opacity = "100%";
   }
 
   displayCards(apiResult, cardWrapper, rows, pageInc);
@@ -91,6 +101,14 @@ leftBtn.addEventListener("click", function pageLeft() {
     pageDec = 1;
   } else {
     pageDec = count -= 1;
+  }
+
+  if (count <= 1) {
+    leftBtn.style.opacity = "50%";
+  }
+
+  if (pageDec < apiResult.length / rows) {
+    rightBtn.style.opacity = "100%";
   }
 
   displayCards(apiResult, cardWrapper, rows, pageDec);
