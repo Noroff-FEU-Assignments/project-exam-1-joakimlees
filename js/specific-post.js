@@ -11,3 +11,18 @@ const test = await getRequest(specificPostUrl);
 console.group("---------------");
 console.log(test);
 console.log("------------");
+
+const mainContainer = document.querySelector(".main-posts");
+
+displayHtml(specificPostUrl, mainContainer, postHtml);
+
+function postHtml() {
+  mainContainer.innerHTML = `
+  
+  <h1>${test.title.rendered}</h1>
+  
+  
+  
+  
+  `;
+}
