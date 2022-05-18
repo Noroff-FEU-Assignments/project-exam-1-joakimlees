@@ -7,22 +7,17 @@ const postId = params.get("id");
 
 const specificPostUrl = "https://joakimlees.no/project-exam-1/wp-json/wp/v2/blog-post/" + postId + "?acf_format=standard";
 
-const test = await getRequest(specificPostUrl);
+const specificPost = await getRequest(specificPostUrl);
 console.group("---------------");
-console.log(test);
+console.log(specificPost);
 console.log("------------");
 
+const headingPostsImage = document.querySelector(".header-image-posts");
 const mainContainer = document.querySelector(".main-posts");
 
-displayHtml(specificPostUrl, mainContainer, postHtml);
+displayHtml(specificPostUrl, headingPostsImage, postHtml);
 
 function postHtml() {
-  mainContainer.innerHTML = `
-  
-  <h1>${test.title.rendered}</h1>
-  
-  
-  
-  
+  headingPostsImage.innerHTML += ` <img src="${specificPost.acf.headerimg}" alt="" />
   `;
 }
