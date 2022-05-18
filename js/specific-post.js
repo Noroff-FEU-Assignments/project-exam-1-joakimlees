@@ -15,9 +15,25 @@ console.log("------------");
 const headingPostsImage = document.querySelector(".header-image-posts");
 const mainContainer = document.querySelector(".main-posts");
 
-displayHtml(specificPostUrl, headingPostsImage, postHtml);
+displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
-function postHtml() {
-  headingPostsImage.innerHTML += ` <img src="${specificPost.acf.headerimg}" alt="" />
+function postHeadingHtml() {
+  headingPostsImage.innerHTML += ` <img class="post-header-img" src="${specificPost.acf.headerimg}" alt="" />
   `;
 }
+
+function testHtml() {
+  mainContainer.innerHTML = `
+  <section>
+  <h1> Hello test</h1>
+  <div>
+  <img src="${specificPost.acf.img1}" alt="" />
+  </div>
+    <p>${specificPost.acf.subheading2}</p>
+  </section>
+  
+  
+  `;
+}
+
+displayHtml(specificPostUrl, mainContainer, testHtml);

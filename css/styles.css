@@ -305,7 +305,7 @@ img {
   width: 100%;
 }
 
-.header-image-posts img {
+.post-header-img {
   object-fit: cover;
   height: 300px;
   object-position: 0;
