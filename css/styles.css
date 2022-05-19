@@ -69,8 +69,8 @@ main {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 80%;
-  background-image: url(/images/pointing1.jpg);
+  background-position: 10% 75%;
+  background-image: url(/images/croheader.jpg);
 }
 
 .header-text h1,
@@ -293,6 +293,40 @@ img {
 
 /* posts */
 
+.post-heading {
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+}
+
+.post-subheading {
+  color: white;
+  font-size: 38px;
+}
+
+.post-date {
+  color: white;
+  text-align: center;
+}
+
+.post-para {
+  color: white;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blog-post-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.posts-cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 /* heading */
 
 .blog-post-container {
@@ -306,12 +340,23 @@ img {
   margin: 0px auto;
 }
 
-.header-image-posts {
+.header-image-posts,
+.header-image-blogs {
   width: 100%;
 }
 
-.post-header-img {
+.post-header-img,
+.blogs-header-img {
   object-fit: cover;
   height: 300px;
   object-position: 0;
+}
+
+/* all blogs*/
+
+.blogs-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }

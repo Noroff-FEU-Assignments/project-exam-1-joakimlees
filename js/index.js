@@ -61,7 +61,7 @@ function displayCards(cards, container, rows, page) {
     container.innerHTML += `
     <a class="blogpost-card" href="/html/posts.html?id=${card.id}">
                 <div class="card-image">
-                  <img src="${card.acf.headerimg}" alt="${card.title.rendered} image" />
+                  <img src="${card.acf.img1_header}" alt="${card.title.rendered} image" />
                 </div>
                 <div class="card-text-wrapper">
                   <h4>${card.title.rendered}</h4>
