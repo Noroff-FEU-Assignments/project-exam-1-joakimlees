@@ -413,3 +413,16 @@ img {
   font-size: 28px;
   font-family: verdana;
 }
+
+/* contact */
+
+.main-contact,
+.main-about {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
