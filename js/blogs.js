@@ -21,7 +21,17 @@ displayHtml(pagination(apiResult, numberOfCards, count), blogsContainer, addCard
 const viewMoreBtn = document.querySelector(".view-more-btn");
 
 viewMoreBtn.addEventListener("click", function viewMore() {
-  numberOfCards = apiResult.length;
-
+  switch (numberOfCards) {
+    case 9:
+      numberOfCards = apiResult.length;
+      viewMoreBtn.innerHTML = "Show less blogs";
+      break;
+    case apiResult.length:
+      numberOfCards = 9;
+      viewMoreBtn.innerHTML = "Show more blogs";
+    default:
+      numberOfCards = 9;
+      viewMoreBtn.innerHTML = "Show more blogs";
+  }
   displayHtml(pagination(apiResult, numberOfCards, count), blogsContainer, addCards);
 });

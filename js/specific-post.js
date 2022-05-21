@@ -9,19 +9,16 @@ const postId = params.get("id");
 const PostUrl = "https://joakimlees.no/project-exam-1/wp-json/wp/v2/blog-post/" + postId + "?acf_format=standard";
 
 const specificPostUrl = await getRequest(PostUrl);
-console.log("---------------");
-console.log(specificPostUrl);
-console.log("------------");
 
 const headingPostsImage = document.querySelector(".header-image-posts");
 const postContainer = document.querySelector(".blog-post-container");
-
-displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
 function postHeadingHtml() {
   headingPostsImage.innerHTML += ` <img class="post-header-img" src="${specificPostUrl.acf.img1_header}" alt="" /> 
   `;
 }
+
+displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
 function makePostHtml(postObject, container) {
   const date = postObject.date.slice(0, -9);
@@ -99,3 +96,18 @@ hideIfNotProperty(specificPostUrl.acf.img2, ".post-img2");
 hideIfNotProperty(specificPostUrl.acf.img3, ".post-img3");
 hideIfNotProperty(specificPostUrl.acf.img4, ".post-img4");
 hideIfNotProperty(specificPostUrl.acf.img5, ".post-img5");
+
+// pop up image
+const popUpContainer = document.querySelector(".popup-img-container");
+const selectedImage = document.querySelectorAll(".blog-post-img");
+
+for (let i = 0; i < selectedImage.length; i++) {
+  selectedImage[i].addEventListener("click", function () {
+    popUpContainer.innerHTML = `<img class="popup-img" src="${selectedImage[i].src}" /><p>Click anywhere to hide image</p>`;
+    popUpContainer.style.display = "block";
+  });
+}
+
+popUpContainer.addEventListener("click", function () {
+  popUpContainer.style.display = "none";
+});
