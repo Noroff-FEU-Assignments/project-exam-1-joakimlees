@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:;base64,=" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>contact title</title>
   </head>
@@ -38,16 +39,39 @@
         </nav>
       </section>
       <main class="main-contact">
-        <h1>Contact</h1>
-        <form class="contact-form" action="#">
-          <label for="name">Name</label>
-          <input type="name" />
-          <label for="email">Email Address</label>
-          <input type="email" />
-          <label for="subject">Subject:</label>
-          <input type="subject" />
-          <label for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <h1 class="contact-heading">Contact</h1>
+        <form id="contact-form" action="#">
+          <div class="contact-fields-wrapper">
+            <div class="single-inputs-wrapper">
+              <label for="name">
+                Name
+                <input type="name" id="name" class="form-field" />
+              </label>
+              <div class="form-error-message form-error-name">validation text go here</div>
+            </div>
+            <div class="single-inputs-wrapper">
+              <label for="email">
+                Email Address
+                <input type="email" id="email" class="form-field" />
+              </label>
+              <div class="form-error-message form-error-email">validation text go here</div>
+            </div>
+            <div class="single-inputs-wrapper">
+              <label for="subject">
+                Subject:
+                <input type="subject" id="subject" class="form-field" />
+              </label>
+              <div class="form-error-message form-error-subject">validation text go here</div>
+            </div>
+            <div class="single-inputs-wrapper">
+              <label for="message">
+                Message:
+                <textarea class="form-textarea" name="message" id="message" cols="30" rows="10"></textarea>
+              </label>
+              <div class="form-error-message form-error-textarea">validation text go here</div>
+            </div>
+          </div>
+          <button>Submit</button>
         </form>
       </main>
       <footer>

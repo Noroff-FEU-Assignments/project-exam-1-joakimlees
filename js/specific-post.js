@@ -108,6 +108,23 @@ for (let i = 0; i < selectedImage.length; i++) {
   });
 }
 
-popUpContainer.addEventListener("click", function () {
-  popUpContainer.style.display = "none";
+popUpContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("popup-img")) {
+    popUpContainer.style.display = "block";
+  } else {
+    popUpContainer.style.display = "none";
+  }
 });
+
+/* Looping object note:
+
+const testUrl = specificPostUrl.acf;
+
+console.log(testUrl);
+
+for (const [key, value] of Object.entries(testUrl)) {
+  console.log(`${key}: ${value}`);
+}
+
+
+*/
