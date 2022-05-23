@@ -1,35 +1,59 @@
+@import "../css/imports/variables.css";
+
+/* text */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--text-heading), century, georgia, "poppins", verdana, garamond;
+}
+
+p {
+  font-family: var(--text-paragraph), "nirmala ui", verdana, arial, "montserrat";
+}
+
 body {
   height: 100vh;
   margin: 0px;
-  background-color: #003a40;
+  background-color: var(--color-green-dark);
 }
 
 .site-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #003a40;
+  background-color: var(--color-green-dark);
 }
 
 /* Header */
-.main-header {
+.banner {
   display: flex;
   justify-content: center;
   background-color: #161616;
 }
 
-.header-content-wrapper {
+.banner__logo {
+  margin: 10px 40px;
+}
+
+.logo__img {
+  width: 100%;
+  height: 60px;
+}
+
+.banner__nav-wrapper {
   display: flex;
   flex-grow: 1;
   max-width: 1450px;
   padding-right: 238.117px;
 }
 
-.header-content-wrapper .top-nav {
+.top-nav {
   width: 100%;
 }
 
-.header-content-wrapper .top-nav ul {
+.top-nav__unlist {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -39,21 +63,26 @@ body {
   height: 100%;
 }
 
-.top-nav li a {
-  font-size: 37px;
+.list__link {
+  font-family: var(--text-cta);
+  font-size: 1.75rem;
   font-weight: bold;
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
-.logo-wrapper-banner img {
-  height: 100px;
+.list__link:hover {
+  text-decoration: underline;
+}
+
+.list--yellow {
+  color: var(--color-yellow);
 }
 
 /*main content*/
 
-main {
+.main {
   max-width: 1450px;
   margin: 0px auto;
   background-color: #003a40;
@@ -61,7 +90,7 @@ main {
   width: 100%;
 }
 
-.header-image {
+.main-index__image-top {
   display: flex;
   align-items: center;
   width: 100%;
@@ -73,24 +102,24 @@ main {
   background-image: url(/images/croheader.jpg);
 }
 
-.header-text h1,
-.header-text p {
+.image-top__text-wrapper h1,
+.image-top__text-wrapper p {
   color: white;
   margin: 0px;
 }
 
-.header-text p {
+.top-image__text p {
   align-self: flex-end;
 }
 
-.header-text {
+.image-top__text-wrapper {
   margin: 0px 0px 100px 100px;
   position: absolute;
   display: flex;
   flex-direction: column;
 }
 
-.header-cta-wrapper {
+.image-top__cta-wrapper {
   margin: 80px auto 0px auto;
 }
 
@@ -103,18 +132,16 @@ main {
   padding: 10px 30px;
 }
 
-.header-cta-wrapper a {
+.cta-wrapper__cta--primary {
+  color: white;
+  background-color: purple;
   margin: 0px 20px;
 }
 
-.primary-cta {
-  color: white;
-  background-color: purple;
-}
-
-.secondary-cta {
+.cta-wrapper__cta--secondary {
   color: black;
   background-color: orange;
+  margin: 0px 20px;
 }
 
 /* Intro main index*/
@@ -135,34 +162,34 @@ main {
   color: white;
 }
 
-.intro-link-wrapper {
+.intro-section__link-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.intro-link-wrapper a {
+.link-wrapper__link {
   text-decoration: none;
   color: orange;
 }
 
 /* scroll menu */
 
-.latest-posts-container {
+.latest-posts {
   margin-top: 100px;
 }
 
-.latest-posts-container h3 {
+.latest-posts h3 {
   text-align: center;
   margin: 0px auto 20px;
   font-size: 38px;
   color: #fff;
 }
 
-.scrollmenu {
+.latest-posts__card-container {
   position: relative;
 }
 
-.view-all-link {
+.latest-posts__view-all-link {
   margin: 15px 40%;
   text-decoration: none;
   font-family: verdana;
@@ -201,7 +228,7 @@ main {
   gap: 50px;
 }
 
-.blogpost-card {
+.card-wrapper__card {
   display: flex;
   flex-direction: column;
   width: 450px;
@@ -209,13 +236,13 @@ main {
   text-decoration: none;
 }
 
-.card-image img {
+.card__image img {
   width: 100%;
   object-fit: cover;
   height: 225px;
 }
 
-.card-text-wrapper {
+.card-wrapper__text-card {
   display: flex;
   justify-content: space-evenly;
   height: 225px;
@@ -223,19 +250,19 @@ main {
   text-align: center;
 }
 
-.card-text-wrapper h4 {
+.card-wrapper__text-card h4 {
   font-size: 38px;
   color: black;
   margin: 0px 50px;
 }
 
-.card-text-wrapper .read-card {
+.text-card__read-more {
   font-size: 28px;
   color: purple;
   margin: 0px;
 }
 
-.card-date {
+.text-card__date {
   color: black;
   font-size: 16px;
   margin: 0px;
@@ -248,27 +275,27 @@ footer {
   background-color: black;
 }
 
-.footer-content-wrapper {
+.footer__footer-wrapper {
   max-width: 1450px;
   margin: 0px auto;
 }
 
-.logo-wrapper-footer {
+.footer-wrapper__logo {
   width: 200px;
   margin: 30px 0px 30px 30px;
 }
 
-img {
-  width: 100%;
+.logo__img--footer {
+  height: 100%;
 }
 
-.footer-text-container {
+.footer-wrapper__text-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0px 0px 100px;
 }
 
-.footer-text-container a {
+.text-wrapper__link {
   text-decoration: none;
   color: white;
   margin: 0px 0px 10px 30px;
@@ -382,8 +409,9 @@ img {
 .post-header-img,
 .blogs-header-img {
   object-fit: cover;
-  height: 300px;
+  height: 200px;
   object-position: 0;
+  width: 100%;
 }
 
 /* all blogs*/

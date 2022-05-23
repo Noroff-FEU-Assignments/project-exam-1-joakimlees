@@ -10,19 +10,27 @@
   </head>
   <body>
     <div class="site-container">
-      <header class="main-header">
-        <figure class="logo-wrapper-banner">
-          <a href="/index.html">
-            <img src="/icons-logo/light-logo.png" alt="cversion logo" />
+      <header class="banner">
+        <figure class="banner__logo logo">
+          <a class="link logo__link logo__link--top-banner" href="/index.html">
+            <img class="img logo__img logo__img--top-banner" src="/icons-logo/light-logo.png" alt="cversion logo" />
           </a>
         </figure>
-        <div class="header-content-wrapper">
-          <nav class="top-nav">
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/html/blogs.html">Blog posts</a></li>
-              <li><a href="/html/about.html">About us</a></li>
-              <li><a href="/html/contact.html">Contact us</a></li>
+        <div class="banner__nav-wrapper">
+          <nav class="top-nav nav">
+            <ul class="top-nav__unlist unlist">
+              <li class="unlist__list list">
+                <a class="list__link link" href="/index.html"><span class="list--yellow">H</span>ome</a>
+              </li>
+              <li class="unlist__list list">
+                <a class="list__link link" href="/html/blogs.html"><span class="list--yellow">B</span>log posts</a>
+              </li>
+              <li class="unlist__list list">
+                <a class="list__link link" href="/html/about.html"><span class="list--yellow">A</span>bout us</a>
+              </li>
+              <li class="unlist__list list">
+                <a class="list__link link" href="/html/contact.html"><span class="list--yellow">C</span>ontact us</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -74,16 +82,16 @@
           <button>Submit</button>
         </form>
       </main>
-      <footer>
-        <div class="footer-content-wrapper">
-          <figure class="logo-wrapper-footer">
-            <a href="/index.html">
-              <img src="/icons-logo/light-logo.png" alt="cversion logo" />
+      <footer class="footer">
+        <div class="footer__footer-wrapper footer-wrapper">
+          <figure class="footer-wrapper__logo logo">
+            <a class="link logo__link logo__link--footer" href="/index.html">
+              <img class="img logo__img logo__img--footer" src="/icons-logo/light-logo.png" alt="cversion logo" />
             </a>
           </figure>
-          <article class="footer-text-container">
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
+          <article class="footer-wrapper__text-wrapper text-wrapper">
+            <a class="text-wrapper__link link" href="/html/about.html">About us</a>
+            <a class="text-wrapper__link link" href="/html/contact.html">Contact</a>
           </article>
         </div>
       </footer>

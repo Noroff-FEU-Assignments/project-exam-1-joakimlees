@@ -12,14 +12,14 @@ export default function addCards(cardsObject, cardWrapper) {
     const updated = card.modified.slice(0, -9);
 
     cardWrapper.innerHTML += `
-    <a class="blogpost-card" href="/html/posts.html?id=${card.id}">
-                <div class="card-image">
+    <a class="card-wrapper__card card" href="/html/posts.html?id=${card.id}">
+                <div class="card__image">
                   <img src="${card.acf.img1_header}" alt="${card.title.rendered} image" />
                 </div>
-                <div class="card-text-wrapper">
+                <div class="card-wrapper__text-card">
                   <h4>${card.title.rendered}</h4>
-                  <p class="read-card">Read post</p>
-                  <p class="card-date">Published: ${date} | Last updated: ${updated}</p>
+                  <p class="text-card__read-more">Read post</p>
+                  <p class="text-card__date">Published: ${date} | Last updated: ${updated}</p>
                 </div>
               </a>
 

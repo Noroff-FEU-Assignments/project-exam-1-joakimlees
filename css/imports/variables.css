@@ -1,0 +1,34 @@
+:root {
+  --text-heading: "orelega one";
+  --text-link: "orelega one";
+  --text-paragraph: "poppins";
+  --text-cta: "montserrat";
+  --color-green-dark: #003940;
+  --color-purple: #5f2b99;
+  --color-white: #fff;
+  --color-black: #161616;
+  --color-yellow: #ffbc4a;
+  --color-red: #a82608;
+  --color-green-light: #97e650;
+}
+
+/*
+var(--text-heading);
+var(--text-link);
+var(--text-paragraph);
+var(--text-cta);
+var(--color-green-dark);
+var(--color-purple);
+var(--color-white);
+var(--color-black);
+var(--color-yellow);
+var(--color-red);
+var(--color-green-light);
+*/
+
+/*backup fonts
+--text-heading: century, georgia, "poppins", verdana, garamond
+--text-link: century, georgia, garamond
+--text-paragraph: "nirmala ui", verdana, arial, "montserrat"
+--text-cta: verdana, arial, "nirmala ui", "poppins"
+*/
