@@ -19,8 +19,8 @@
   max-width: 600px;
 }
 
-form .single-inputs-wrapper .form-field,
-form .single-inputs-wrapper .form-textarea {
+.form-field,
+.form-textarea {
   font-family: var(--text-paragraph);
   font-size: 1rem;
   display: block;
@@ -29,11 +29,11 @@ form .single-inputs-wrapper .form-textarea {
   border-radius: 0.5px;
 }
 
-form .single-inputs-wrapper .form-field {
-  height: 25px;
+.form-field {
+  height: 40px;
 }
 
-form .single-inputs-wrapper .form-textarea {
+.form-textarea {
   height: 200px;
 }
 
