@@ -68,38 +68,32 @@
       <main class="main-contact">
         <h1 class="contact-heading">Contact</h1>
         <form class="contact-form" id="contact-form" action="#" method="POST">
-          <div class="success-message" id="success-message">Your message has been send</div>
-          <div class="contact-fields-wrapper">
-            <div class="single-inputs-wrapper">
-              <label for="name">
-                Name:
+          <div class="form-element-wrapper">
+            <div class="success-message" id="success-message">Your message has been send</div>
+            <div class="contact-fields-wrapper">
+              <div class="single-inputs-wrapper">
+                <label for="name">Name:</label>
                 <input type="name" id="name" class="form-field" />
-              </label>
-              <div id="name-error"></div>
-            </div>
-            <div class="single-inputs-wrapper">
-              <label for="email">
-                Email Address:
+                <div id="name-error"></div>
+              </div>
+              <div class="single-inputs-wrapper">
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" class="form-field" />
-              </label>
-              <div id="email-error"></div>
-            </div>
-            <div class="single-inputs-wrapper">
-              <label for="subject">
-                Subject:
+                <div id="email-error"></div>
+              </div>
+              <div class="single-inputs-wrapper">
+                <label for="subject"> Subject:</label>
                 <input type="subject" id="subject" class="form-field" />
-              </label>
-              <div id="subject-error"></div>
-            </div>
-            <div class="single-inputs-wrapper">
-              <label for="message">
-                Message:
+                <div id="subject-error"></div>
+              </div>
+              <div class="single-inputs-wrapper">
+                <label for="message"> Message:</label>
                 <textarea class="form-textarea" name="message" id="message" cols="30" rows="10"></textarea>
-              </label>
-              <div id="message-error"></div>
+                <div id="message-error"></div>
+              </div>
             </div>
+            <button class="cta cta--yellow" type="submit">Submit</button>
           </div>
-          <button class="cta cta--yellow" type="submit">Submit</button>
         </form>
       </main>
       <footer class="footer">
