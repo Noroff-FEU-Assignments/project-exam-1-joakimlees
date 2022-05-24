@@ -24,14 +24,17 @@ viewMoreBtn.addEventListener("click", function viewMore() {
   switch (numberOfCards) {
     case 9:
       numberOfCards = apiResult.length;
-      viewMoreBtn.innerHTML = "Show less blogs";
+      viewMoreBtn.innerHTML = `&#11165;<br />
+      Show less blogs `;
       break;
     case apiResult.length:
       numberOfCards = 9;
-      viewMoreBtn.innerHTML = "Show more blogs";
+      viewMoreBtn.innerHTML = `Show more blogs <br />
+      &#11167;`;
     default:
       numberOfCards = 9;
-      viewMoreBtn.innerHTML = "Show more blogs";
+      viewMoreBtn.innerHTML = `Show more blogs <br />
+      &#11167;`;
   }
   displayHtml(pagination(apiResult, numberOfCards, count), blogsContainer, addCards);
 });

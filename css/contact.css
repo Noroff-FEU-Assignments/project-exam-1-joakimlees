@@ -1,0 +1,69 @@
+/* contact */
+
+.main-contact,
+.main-about {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.contact-heading {
+  color: var(--color-yellow);
+  font-size: 3.1rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+}
+
+form .single-inputs-wrapper .form-field,
+form .single-inputs-wrapper .form-textarea {
+  font-family: var(--text-paragraph);
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  border-color: var(--color-black);
+  border-radius: 0.5px;
+}
+
+form .single-inputs-wrapper .form-field {
+  height: 25px;
+}
+
+form .single-inputs-wrapper .form-textarea {
+  height: 200px;
+}
+
+.single-inputs-wrapper {
+  font-family: var(--text-heading);
+  font-size: 1.3rem;
+  margin: 15px 0px;
+  color: var(--color-white);
+}
+
+.form-error-message {
+  display: block;
+  font-size: 1.1rem;
+  font-family: var(--text-paragraph);
+  color: var(--color-yellow);
+}
+
+.error-class {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+.success-class {
+  background-color: var(--color-green-light);
+}
+
+.success-message {
+  display: none;
+  font-family: var(--text-heading);
+  font-size: 2.3rem;
+  color: var(--color-green-light);
+  text-align: center;
+}
