@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 450px;
+  max-width: 600px;
 }
 
 form .single-inputs-wrapper .form-field,
