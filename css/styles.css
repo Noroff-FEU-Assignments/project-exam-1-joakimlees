@@ -127,6 +127,7 @@ body {
   font-family: var(--text-cta);
   font-weight: 600;
   font-size: 1.75rem;
+  text-align: center;
   text-decoration: none;
   list-style: none;
   padding: 10px 30px;

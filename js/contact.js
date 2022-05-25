@@ -12,6 +12,8 @@ const emailError = document.querySelector("#email-error");
 const subjectError = document.querySelector("#subject-error");
 const messageError = document.querySelector("#message-error");
 
+const submitBtn = document.querySelector(".submit-btn");
+
 form.addEventListener("submit", formValidator);
 
 /*
@@ -54,16 +56,20 @@ function formValidator(event) {
   if (!inputLength(messageInput.value, 25)) {
     messageCheck = false;
     createError(messageError, messageInput, "Your message must be atleast 25 characters");
-    messageInput.className = "error-class form-textarea";
+    messageInput.className = "form-textarea error-class";
   } else {
     messageCheck = true;
     correctIndicator(messageInput, messageError);
-    messageInput.className = "success-class form-textarea";
+    messageInput.className = "form-textarea success-class";
   }
   if (nameCheck && subjectCheck && emailCheck && messageCheck) {
     successMessage.style.display = "block";
+    homeBtn.style.display = "block";
+    submitBtn.style.opacity = "50%";
   } else {
     successMessage.style.display = "none";
+    homeBtn.style.display = "none";
+    submitBtn.style.opacity = "100%";
   }
 }
 
@@ -92,7 +98,7 @@ the third is the message/text which will be displayed.
 function createError(messageBox, inputField, messageText) {
   messageBox.innerHTML = messageText;
   messageBox.className = "form-error-message";
-  inputField.className = "error-class form-field";
+  inputField.className = "form-field error-class";
 }
 
 /*
@@ -101,6 +107,8 @@ The first parameter is the input field and it adds the success-class to it.
 The second parameter is the error message div, which is set to an emty string.
 */
 function correctIndicator(successMarker, removeError) {
-  successMarker.className = "success-class form-field";
+  successMarker.className = "form-field success-class";
   removeError.innerHTML = "";
 }
+
+const homeBtn = document.querySelector(".contact-back-home");

@@ -1,8 +1,11 @@
 /* contact */
 
 .main-contact {
-  max-width: 800px;
+  width: 500px;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-heading {
@@ -11,19 +14,19 @@
   text-align: center;
 }
 
-.form-element-wrapper {
+.contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
+}
+
+.form-fields-wrapper {
 }
 
 .form-field,
 .form-textarea {
   font-family: var(--text-paragraph);
   font-size: 1rem;
-  display: block;
-  width: 100%;
   border-color: var(--color-black);
   border-radius: 0.5px;
 }
@@ -37,6 +40,8 @@
 }
 
 .single-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
   font-family: var(--text-heading);
   font-size: 1.3rem;
   margin: 15px 0px;
@@ -44,7 +49,6 @@
 }
 
 .form-error-message {
-  display: block;
   font-size: 1.1rem;
   font-family: var(--text-paragraph);
   color: var(--color-yellow);
@@ -61,8 +65,17 @@
 
 .success-message {
   display: none;
-  font-family: var(--text-heading);
-  font-size: 2.3rem;
+  font-family: var(--text-paragraph);
+  font-size: 1.3rem;
   color: var(--color-green-light);
   text-align: center;
+  margin-bottom: 5px;
+}
+
+.main-contact .contact-back-home {
+  display: none;
+  width: 100%;
+  margin: 25px 0px 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
