@@ -13,6 +13,7 @@ const subjectError = document.querySelector("#subject-error");
 const messageError = document.querySelector("#message-error");
 
 const submitBtn = document.querySelector(".submit-btn");
+const homeBtn = document.querySelector(".contact-back-home");
 
 form.addEventListener("submit", formValidator);
 
@@ -110,5 +111,3 @@ function correctIndicator(successMarker, removeError) {
   successMarker.className = "form-field success-class";
   removeError.innerHTML = "";
 }
-
-const homeBtn = document.querySelector(".contact-back-home");
