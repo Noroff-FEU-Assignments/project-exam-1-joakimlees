@@ -7,30 +7,37 @@ const url = "https://joakimlees.no/project-exam-1/wp-json/wp/v2/blog-post?acf_fo
 
 const apiResult = await getRequest(url);
 
-/*
-const mediaTest = matchMedia("( min-width: 1000px)");
+let count = 1;
+let numberOfCards = 1;
 
-if (mediaTest.matches) {
-  numberOfCards = 3;
-} else {
-  numberOfCards = 1;
+let screenTwoCards = matchMedia("( min-width: 800px)");
+let screenThreeCards = matchMedia("( min-width: 1200px)");
+
+if (screenTwoCards.matches) {
+  numberOfCards = 2;
 }
 
-mediaMobil.addEventListener("change", function () {
-  rows = 1;
-  displayCards(apiResult, cardWrapper, rows, count);
+if (screenThreeCards.matches) {
+  numberOfCards = 3;
+}
+
+screenTwoCards.addEventListener("change", function () {
+  if (screenTwoCards.matches) {
+    numberOfCards = 2;
+  } else if (!screenTwoCards.matches) {
+    numberOfCards = 1;
+  }
+  displayHtml(pagination(apiResult, numberOfCards, count), cardWrapper, addCards);
 });
 
-
-mediaTest.addEventListener("change", function () {
-  rows = 1;
-  displayCards(apiResult, cardWrapper, rows, count);
+screenThreeCards.addEventListener("change", function () {
+  if (screenThreeCards.matches) {
+    numberOfCards = 3;
+  } else if (!screenThreeCards.matches) {
+    numberOfCards = 2;
+  }
+  displayHtml(pagination(apiResult, numberOfCards, count), cardWrapper, addCards);
 });
-
-*/
-
-let count = 1;
-let numberOfCards = 3;
 
 const cardWrapper = document.querySelector(".card-wrapper");
 const rightBtn = document.querySelector(".arrow-right");

@@ -202,6 +202,7 @@ body {
 }
 
 .latest-posts__card-container {
+  margin: 0px 15px;
   position: relative;
 }
 
@@ -249,7 +250,7 @@ body {
 
 .arrow-wrapper img {
   width: 100%;
-  height: 35px;
+  height: 25px;
 }
 
 .arrow-left {
@@ -280,33 +281,36 @@ body {
 .card-wrapper__card {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 100%;
   background-color: white;
   text-decoration: none;
+}
+
+.card__image img,
+.card-wrapper__text-card {
+  height: 175px;
 }
 
 .card__image img {
   width: 100%;
   object-fit: cover;
-  height: 225px;
 }
 
 .card-wrapper__text-card {
   display: flex;
   justify-content: space-evenly;
-  height: 225px;
   flex-direction: column;
   text-align: center;
 }
 
 .card-wrapper__text-card h4 {
-  font-size: 2.3rem;
+  font-size: 1.75rem;
   color: var(--color-black);
   margin: 0px 50px;
 }
 
 .text-card__read-more {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   font-family: var(--text-link);
   color: var(--color-purple);
   margin: 0px;
@@ -315,7 +319,7 @@ body {
 .text-card__date {
   color: var(--color-black);
   font-family: var(--text-paragraph);
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin: 0px;
 }
 
@@ -386,4 +390,77 @@ footer {
   width: 100%;
 }
 
-/* all blogs*/
+/* media  */
+
+@media (min-width: 600px) {
+  /* cards section */
+
+  .card__image img,
+  .card-wrapper__text-card {
+    height: 225px;
+  }
+
+  .arrow-wrapper img {
+    height: 35px;
+  }
+
+  .card-wrapper__text-card h4 {
+    font-size: 2.3rem;
+  }
+
+  .text-card__read-more {
+    font-size: 1.75rem;
+  }
+
+  .text-card__date {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .card__image img,
+  .card-wrapper__text-card {
+    height: 175px;
+  }
+
+  .arrow-wrapper img {
+    height: 25px;
+  }
+
+  .card-wrapper__text-card h4 {
+    font-size: 1.75rem;
+  }
+
+  .text-card__read-more {
+    font-size: 1.3rem;
+  }
+
+  .text-card__date {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* cards section */
+
+  .card__image img,
+  .card-wrapper__text-card {
+    height: 225px;
+  }
+
+  .arrow-wrapper img {
+    height: 35px;
+  }
+
+  .card-wrapper__text-card h4 {
+    font-size: 2.3rem;
+  }
+
+  .text-card__read-more {
+    font-size: 1.75rem;
+  }
+
+  .text-card__date {
+    font-size: 1rem;
+  }
+}
