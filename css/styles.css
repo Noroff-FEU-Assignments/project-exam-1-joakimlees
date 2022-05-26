@@ -56,9 +56,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0px;
-  right: 50px;
+  right: 0px;
   z-index: 1000;
-  width: 50%;
+  width: 250px;
 }
 
 #hamburger-menu:checked ~ .top-nav {
@@ -74,15 +74,32 @@ body {
   height: 35px;
 }
 
+.exit {
+  margin: 0px;
+  align-self: flex-end;
+}
+
+.exit img {
+  width: 35px;
+  height: 100%;
+}
+
 .top-nav__unlist {
   border-style: solid;
   border-color: var(--color-yellow);
   background-color: var(--color-black);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   list-style: none;
   padding: 0px;
   margin: 0px;
   height: 100%;
+  padding: 25px;
+}
+
+.unlist__list {
+  margin: 15px 0px;
 }
 
 .list__link {
