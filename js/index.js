@@ -21,23 +21,27 @@ if (screenThreeCards.matches) {
   numberOfCards = 3;
 }
 
-screenTwoCards.addEventListener("change", function () {
-  if (screenTwoCards.matches) {
-    numberOfCards = 2;
-  } else if (!screenTwoCards.matches) {
-    numberOfCards = 1;
-  }
-  displayHtml(pagination(apiResult, numberOfCards, count), cardWrapper, addCards);
-});
+/* 
+param1: the matchMedia variable.
+param2: the variable for x number of cards.
+param3: The value to set, to the x number of cards variable if the matchMedia variable is true.
+param4: The value to set, to the x number of cards variable if the matchMedia variable is false.
+Function, with a function which triggers the "screen" - parameter on a "change" event. calling the displayHtml function.
+*/
 
-screenThreeCards.addEventListener("change", function () {
-  if (screenThreeCards.matches) {
-    numberOfCards = 3;
-  } else if (!screenThreeCards.matches) {
-    numberOfCards = 2;
-  }
-  displayHtml(pagination(apiResult, numberOfCards, count), cardWrapper, addCards);
-});
+function screenCardsChanger(screen, card, amountOne, amountTwo) {
+  screen.addEventListener("change", function () {
+    if (screen.matches) {
+      card = amountOne;
+    } else if (!screen.matches) {
+      card = amountTwo;
+    }
+    displayHtml(pagination(apiResult, card, count), cardWrapper, addCards);
+  });
+}
+
+screenCardsChanger(screenTwoCards, numberOfCards, 2, 1);
+screenCardsChanger(screenThreeCards, numberOfCards, 3, 2);
 
 const cardWrapper = document.querySelector(".card-wrapper");
 const rightBtn = document.querySelector(".arrow-right");
