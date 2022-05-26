@@ -92,20 +92,27 @@ body {
 
 .main-index__image-top {
   display: flex;
-  align-items: center;
   width: 100%;
-  height: 300px;
+  height: 175px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 75%;
   background-image: url(/images/croheader.jpg);
+  flex-direction: column;
+  justify-content: center;
 }
 
-.image-top__text-wrapper h1,
-.image-top__text-wrapper p {
+.image-top__text-wrapper h1 {
+  font-size: 1.3rem;
   color: white;
   margin: 0px;
+}
+
+.image-top__text-wrapper p {
+  font-size: 0.75rem;
+  color: var(--color-white);
+  margin: 0px 0px 5px 0px;
 }
 
 .top-image__text p {
@@ -113,24 +120,24 @@ body {
 }
 
 .image-top__text-wrapper {
-  margin: 0px 0px 100px 100px;
-  position: absolute;
+  margin: 0px 0px 10px 5%;
   display: flex;
   flex-direction: column;
 }
 
 .image-top__cta-wrapper {
-  margin: 80px auto 0px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .cta {
   font-family: var(--text-cta);
-  font-weight: 600;
-  font-size: 1.75rem;
+  font-weight: 700;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   list-style: none;
-  padding: 10px 30px;
+  padding: 10px 15px;
   border: none;
 }
 
@@ -144,10 +151,7 @@ body {
   background-color: var(--color-yellow);
 }
 
-.cta-wrapper__cta--purple {
-  margin: 0px 20px;
-}
-
+.cta-wrapper__cta--purple,
 .cta-wrapper__cta--yellow {
   margin: 0px 20px;
 }
@@ -393,7 +397,7 @@ footer {
 /* media  */
 
 @media (min-width: 600px) {
-  /* cards section */
+  /* cards section index */
 
   .card__image img,
   .card-wrapper__text-card {
@@ -418,6 +422,30 @@ footer {
 }
 
 @media (min-width: 800px) {
+  /*index header*/
+
+  .main-index__image-top {
+    height: 250px;
+  }
+
+  .image-top__text-wrapper {
+    margin: 15px 0px 25px 5%;
+  }
+
+  .image-top__text-wrapper h1 {
+    font-size: 1.75rem;
+  }
+
+  .image-top__text-wrapper p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+
+  /*cards index*/
   .card__image img,
   .card-wrapper__text-card {
     height: 175px;
@@ -441,7 +469,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  /* cards section */
+  /* cards section index */
 
   .card__image img,
   .card-wrapper__text-card {
@@ -462,5 +490,40 @@ footer {
 
   .text-card__date {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*index header*/
+
+  .main-index__image-top {
+    height: 300px;
+  }
+
+  .image-top__text-wrapper h1 {
+    font-size: 2.3rem;
+  }
+
+  .image-top__text-wrapper p {
+    font-size: 1.3rem;
+  }
+
+  .image-top__text-wrapper {
+    margin: 0px 0px 100px 5%;
+    position: absolute;
+  }
+
+  .image-top__cta-wrapper {
+    margin: 80px auto 0px auto;
+  }
+
+  .cta {
+    font-size: 1.75rem;
+    padding: 10px 15px;
+  }
+
+  .cta-wrapper__cta--purple,
+  .cta-wrapper__cta--yellow {
+    margin: 0px 20px;
   }
 }
