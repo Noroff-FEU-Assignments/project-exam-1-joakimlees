@@ -511,6 +511,13 @@ footer {
   .footer__link {
     font-size: 1.75rem;
   }
+
+  /*header img */
+
+  .post-header-img,
+  .blogs-header-img {
+    height: 225px;
+  }
 }
 
 @media (min-width: 800px) {

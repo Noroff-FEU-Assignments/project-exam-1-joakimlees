@@ -103,7 +103,7 @@ const selectedImage = document.querySelectorAll(".blog-post-img");
 
 for (let i = 0; i < selectedImage.length; i++) {
   selectedImage[i].addEventListener("click", function () {
-    popUpContainer.innerHTML = `<img class="popup-img" src="${selectedImage[i].src}" /><p>Click anywhere to hide image</p>`;
+    popUpContainer.innerHTML = `<img class="popup-img" src="${selectedImage[i].src}" />`;
     popUpContainer.style.display = "block";
   });
 }
