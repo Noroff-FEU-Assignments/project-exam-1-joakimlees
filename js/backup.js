@@ -66,3 +66,5 @@ export default function displayCards(cards, container, amountDisplayed, page) {
 }
 
 displayCards(apiResult, cardWrapper, numberOfCards, count);
+
+/* BACKUP Specific-posts*/

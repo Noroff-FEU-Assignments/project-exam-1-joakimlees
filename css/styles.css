@@ -13,17 +13,20 @@ p {
   font-family: var(--text-paragraph), "nirmala ui", verdana, arial, "montserrat";
 }
 
+body,
+.site-container {
+  background-color: var(--color-green-dark);
+}
+
 body {
   height: 100vh;
   margin: 0px;
-  background-color: var(--color-green-dark);
 }
 
 .site-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: var(--color-green-dark);
 }
 
 /* Header */
