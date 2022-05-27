@@ -11,7 +11,7 @@ console.log(apiResult.length);
 
 console.log(apiResult);
 
-const blogsContainer = document.querySelector(".blogs-main");
+const blogsContainer = document.querySelector(".blogs-container");
 
 let count = 1;
 let numberOfCards = 9;
@@ -31,6 +31,10 @@ viewMoreBtn.addEventListener("click", function viewMore() {
       numberOfCards = 9;
       viewMoreBtn.innerHTML = `Show more blogs <br />
       &#11167;`;
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
     default:
       numberOfCards = 9;
       viewMoreBtn.innerHTML = `Show more blogs <br />
