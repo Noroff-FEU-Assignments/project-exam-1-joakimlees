@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="data:;base64,=" />
-    <title>About title</title>
+    <title>cVersion|All blog posts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orelega+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="/css/media.css" />
     <!-- Hotjar Tracking Code for https://guileless-frangollo-31ef7e.netlify.app -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -50,13 +50,13 @@
                 <a class="list__link link" href="/index.html"><span class="list--yellow">H</span>ome</a>
               </li>
               <li class="unlist__list list">
-                <a class="list__link link" href="/html/blogs.html"><span class="list--yellow">B</span>log posts</a>
+                <a class="list__link link" href="/blogs.html"><span class="list--yellow">B</span>log posts</a>
               </li>
               <li class="unlist__list list">
-                <a class="list__link link" href="/html/about.html"><span class="list--yellow">A</span>bout us</a>
+                <a class="list__link link" href="/about.html"><span class="list--yellow">A</span>bout us</a>
               </li>
               <li class="unlist__list list">
-                <a class="list__link link" href="/html/contact.html"><span class="list--yellow">C</span>ontact us</a>
+                <a class="list__link link" href="/contact.html"><span class="list--yellow">C</span>ontact us</a>
               </li>
             </ul>
           </nav>
@@ -64,7 +64,7 @@
       </header>
       <section class="posts-heading">
         <div class="header-image-blogs">
-          <img class="blogs-header-img" src="/images/croheader.jpg" alt="" />
+          <img class="blogs-header-img" src="/images/cro2.jpg" alt="Image of a computer screen on a home office desk" />
         </div>
         <nav class="breadcrumbs">
           <ul>
@@ -72,16 +72,19 @@
           </ul>
         </nav>
       </section>
-      <main class="main main-about">
-        <article class="about-content">
-          <h1>About cVersion</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi. Eget dolor morbi non arcu risus quis varius quam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi. Eget dolor morbi non arcu risus quis varius quam. Quis commodo odio aenean sed adipiscing. Urna id volutpat lacus laoreet non curabitur gravida. Velit egestas dui id ornare arcu. Consequat mauris nunc congue nisi vitae. Arcu dictum varius duis at. Gravida cum sociis natoque penatibus et magnis dis parturient. Risus commodo viverra maecenas accumsan lacus vel facilisis. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Integer eget aliquet nibh praesent tristique magna. Augue eget arcu dictum varius duis at. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. In nibh mauris cursus mattis molestie a iaculis at. Id neque aliquam vestibulum morbi blandit. Et tortor consequat id porta nibh venenatis. Velit scelerisque in dictum non. Sit amet facilisis magna etiam tempor orci eu. Amet massa vitae tortor condimentum lacinia quis vel eros. Sit amet venenatis urna cursus eget nunc scelerisque. Ultrices neque ornare aenean euismod. Facilisi cras fermentum odio eu feugiat. Dapibus ultrices in iaculis nunc sed. Mi proin sed libero enim sed faucibus turpis in. Sed sed risus pretium quam vulputate dignissim suspendisse. Dui faucibus in ornare quam viverra orci sagittis eu.</p>
+      <main class="main main-blogs">
+        <h1 class="blogs-h1">
+          <span class="blogs-h1__all">All</span>
+          <span class="blogs-h1__blog-posts">blog posts</span>
+          <span class="blogs-h1__cro">You need to know about CRO</span>
+        </h1>
+        <article class="blogs-container">
+          <div class="loader">Loading...</div>
         </article>
-        <div class="about-cta-wrapper">
-          <a href="/html/contact.html" class="cta cta--yellow">Contact cVersion</a>
-          <a href="/html/contact.html" class="cta cta--purple">View blogs</a>
-        </div>
+        <button class="view-more-btn">
+          Show more blogs <br />
+          &#11167;
+        </button>
       </main>
       <footer class="footer">
         <div class="footer__footer-wrapper footer-wrapper">
@@ -91,11 +94,12 @@
             </a>
           </figure>
           <article class="footer-wrapper__text-wrapper">
-            <a class="footer__link" href="/html/about.html">About us</a>
-            <a class="footer__link" href="/html/contact.html">Contact</a>
+            <a class="footer__link" href="/about.html">About us</a>
+            <a class="footer__link" href="/contact.html">Contact</a>
           </article>
         </div>
       </footer>
     </div>
   </body>
+  <script src="/js/blogs.js" type="module"></script>
 </html>
