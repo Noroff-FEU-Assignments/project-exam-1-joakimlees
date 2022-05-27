@@ -454,7 +454,7 @@ footer {
 .post-header-img,
 .blogs-header-img {
   object-fit: cover;
-  height: 200px;
+  height: 150px;
   object-position: 0;
   width: 100%;
 }
