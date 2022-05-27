@@ -37,7 +37,13 @@
           </a>
         </figure>
         <div class="banner__nav-wrapper">
+          <label class="hamburger-menu-label" for="hamburger-menu"><img src="/icons-logo/burger-menu-bars.png" alt="icon for navigation menu" /></label>
+          <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
           <nav class="top-nav">
+            <figure class="nav-closer">
+              <a href="/index.html"><img class="nav__logo" src="/icons-logo/light-logo.png" alt="cVersion logo on navigation menu" /></a>
+              <img id="nav-closer" class="nav-closer__img" src="/icons-logo/exitmark.png" alt="exit icon from hamburger-menu" />
+            </figure>
             <ul class="top-nav__unlist unlist">
               <li class="unlist__list list">
                 <a class="list__link link" href="/index.html"><span class="list--yellow">H</span>ome</a>
@@ -65,8 +71,12 @@
           </ul>
         </nav>
       </section>
-      <main class="main">
-        <h1 class="blogs-h1">All blog posts</h1>
+      <main class="main main-blogs">
+        <h1 class="blogs-h1">
+          <span class="blogs-h1__all">All</span>
+          <span class="blogs-h1__blog-posts">blog posts</span>
+          <span class="blogs-h1__cro">You need to know about CRO</span>
+        </h1>
         <article class="blogs-main">
           <h1>Loading...</h1>
         </article>

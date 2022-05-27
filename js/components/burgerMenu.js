@@ -1,6 +1,8 @@
-const exit = document.querySelector("#exit");
+const navCloser = document.querySelector("#nav-closer");
 const burgerMenu = document.querySelector("#hamburger-menu");
 
-exit.addEventListener("click", function () {
-  console.log(burgerMenu);
+console.log(burgerMenu);
+
+navCloser.addEventListener("click", function () {
+  burgerMenu.checked = false;
 });
