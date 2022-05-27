@@ -1,0 +1,123 @@
+/* Header */
+
+.main-index__image-top {
+  height: 175px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 75%;
+  background-image: url(/images/croheader.jpg);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-top__text-wrapper p {
+  margin: 0px 0px 5px 0px;
+}
+
+.top-image__text p {
+  align-self: flex-end;
+}
+
+.image-top__text-wrapper {
+  margin: 0px 0px 10px 5%;
+}
+
+.image-top__cta-wrapper {
+  justify-content: center;
+}
+
+/* Intro main index*/
+
+.intro-section {
+  margin: 0px 15px;
+  max-width: 570px;
+}
+
+.intro-section h2 {
+  text-align: center;
+  margin: 75px 0px 10px;
+}
+
+.intro-section p {
+  margin: 10px 0px 50px;
+  text-align: center;
+}
+
+.intro-section__link-wrapper {
+  justify-content: space-between;
+}
+
+.link-wrapper__link:hover {
+  text-decoration: underline;
+}
+
+/* Card-container index */
+
+.latest-posts {
+  margin-top: 100px;
+}
+
+.latest-posts h3 {
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+.latest-posts__card-container {
+  margin: 0px 15px;
+  position: relative;
+}
+
+.latest-posts__view-all-link {
+  display: block;
+  text-align: center;
+}
+
+.latest-posts__view-all-link,
+.view-more-btn {
+  background: none;
+  border: none;
+  display: block;
+  margin: 10px auto 0px;
+  padding: 10px 40px;
+}
+
+.latest-posts__view-all-link:hover {
+  text-decoration: underline;
+}
+
+.latest-posts__view-all-link {
+  width: 250px;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  padding: 15px 10px;
+  border-style: none;
+}
+
+.arrow-wrapper img {
+  height: 25px;
+}
+
+.arrow-left {
+  opacity: 50%;
+  top: 41.5%;
+  left: 0px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  padding: 17px 12px;
+  transition: padding 0.4s;
+}
+
+.arrow-right {
+  right: 0px;
+  top: 41.5%;
+}
+
+.card-wrapper {
+  justify-content: center;
+  gap: 50px;
+}

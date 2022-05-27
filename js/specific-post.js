@@ -14,7 +14,7 @@ const headingPostsImage = document.querySelector(".header-image-posts");
 const postContainer = document.querySelector(".blog-post-container");
 
 function postHeadingHtml() {
-  headingPostsImage.innerHTML += ` <img class="post-header-img" src="${specificPostUrl.acf.img1_header}" alt="" /> 
+  headingPostsImage.innerHTML = ` <img class="post-header-img" src="${specificPostUrl.acf.img1_header}" alt="" /> 
   `;
 }
 

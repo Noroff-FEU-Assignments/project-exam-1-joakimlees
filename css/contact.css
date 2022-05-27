@@ -10,22 +10,12 @@
 }
 
 .contact-heading {
-  color: var(--color-yellow);
   font-size: 3.1rem;
   text-align: center;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .form-field,
 .form-textarea {
-  font-family: var(--text-paragraph);
-  font-size: 1rem;
-  border-color: var(--color-black);
   border-radius: 0.5px;
 }
 
@@ -40,8 +30,6 @@
 .single-inputs-wrapper {
   display: flex;
   flex-direction: column;
-  font-family: var(--text-heading);
-  font-size: 1.3rem;
   margin: 15px 0px;
   color: var(--color-white);
 }
