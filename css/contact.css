@@ -2,7 +2,7 @@
 
 .main-contact {
   max-width: 400px;
-  width: 100%;
+  width: 85%;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -19,9 +19,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.form-fields-wrapper {
 }
 
 .form-field,
