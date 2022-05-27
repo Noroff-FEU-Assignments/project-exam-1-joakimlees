@@ -101,14 +101,3 @@ leftBtn.addEventListener("click", function pageLeft() {
 
   displayHtml(pagination(apiResult, numberOfCards, pageDec), cardWrapper, addCards);
 });
-
-/*
-var win = window,
-  doc = document,
-  docElem = doc.documentElement,
-  body = doc.getElementsByTagName("body")[0],
-  x = win.innerWidth || docElem.clientWidth || body.clientWidth,
-  y = win.innerHeight || docElem.clientHeight || body.clientHeight;
-let test = x + " × " + y;
-console.log(test);
-*/

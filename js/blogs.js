@@ -7,10 +7,6 @@ const url = "https://joakimlees.no/project-exam-1/wp-json/wp/v2/blog-post?acf_fo
 
 const apiResult = await getRequest(url);
 
-console.log(apiResult.length);
-
-console.log(apiResult);
-
 const blogsContainer = document.querySelector(".blogs-container");
 
 let count = 1;

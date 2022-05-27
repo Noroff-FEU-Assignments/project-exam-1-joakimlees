@@ -18,7 +18,6 @@ function postHeadingHtml() {
   `;
 }
 
-console.log(specificPostUrl);
 displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
 function makePostHtml(postObject, container) {
@@ -116,16 +115,3 @@ popUpContainer.addEventListener("click", function (e) {
     popUpContainer.style.display = "none";
   }
 });
-
-/* Looping object note:
-
-const testUrl = specificPostUrl.acf;
-
-console.log(testUrl);
-
-for (const [key, value] of Object.entries(testUrl)) {
-  console.log(`${key}: ${value}`);
-}
-
-
-*/
