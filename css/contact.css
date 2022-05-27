@@ -28,20 +28,10 @@
 }
 
 .single-inputs-wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 15px 0px;
-  color: var(--color-white);
-}
-
-.form-error-message {
-  font-size: 1.1rem;
-  font-family: var(--text-paragraph);
-  color: var(--color-yellow);
 }
 
 .error-class {
-  color: var(--color-white);
   background-color: var(--color-red);
 }
 
@@ -51,8 +41,6 @@
 
 .success-message {
   display: none;
-  font-family: var(--text-paragraph);
-  font-size: 1.3rem;
   color: var(--color-green-light);
   text-align: center;
   margin-bottom: 5px;
@@ -60,7 +48,6 @@
 
 .main-contact .contact-back-home {
   display: none;
-  width: 100%;
   margin: 25px 0px 0px;
   padding-right: 0px;
   padding-left: 0px;

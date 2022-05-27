@@ -22,7 +22,8 @@ footer,
 .post-heading,
 .post-link,
 .main-about h1,
-.contact-heading {
+.contact-heading,
+.form-error-message {
   color: var(--color-yellow);
 }
 
@@ -40,7 +41,9 @@ footer,
 .post-subheading,
 .post-date,
 .post-para,
-.main-about p {
+.main-about p,
+.single-inputs-wrapper,
+.error-class {
   color: var(--color-white);
 }
 
@@ -58,13 +61,15 @@ footer,
 
 /* text */
 
-.image-top__text-wrapper h1,
-.intro-section h2,
-.latest-posts h3,
-.card-wrapper__text-card h4,
 .loader,
-.single-inputs-wrapper {
+.single-inputs-wrapper,
+.contact-heading,
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--text-heading), century, georgia, "poppins", verdana, garamond;
+  font-weight: 400;
 }
 
 .text-card__date,
@@ -72,7 +77,11 @@ footer,
 .intro-section p,
 .post-para,
 .form-field,
-.form-textarea {
+.form-textarea,
+.form-error-message,
+.success-message,
+.about-content p,
+.post-date {
   font-family: var(--text-paragraph), "nirmala ui", verdana, arial, "montserrat";
 }
 
@@ -81,6 +90,7 @@ footer,
 .footer__link,
 .post-link {
   font-family: var(--text-link), century, georgia, garamond;
+  font-weight: 400;
 }
 
 .latest-posts__view-all-link,
@@ -90,6 +100,7 @@ footer,
 .breadcrumbs ul li a,
 .main-blogs .blogs-h1 .blogs-h1__cro {
   font-family: var(--text-cta), verdana, arial, "nirmala ui", "poppins";
+  font-weight: 600;
 }
 
 /* font sizes */
@@ -108,7 +119,8 @@ footer,
 .post-link,
 .main-about p,
 .form-field,
-.form-textarea {
+.form-textarea,
+.form-error-message {
   font-size: 1rem;
 }
 
@@ -116,7 +128,8 @@ footer,
 .link-wrapper__link,
 .text-card__read-more,
 .footer__link,
-.single-inputs-wrapper {
+.single-inputs-wrapper,
+.success-message {
   font-size: 1.3rem;
 }
 
@@ -172,7 +185,8 @@ footer,
 .breadcrumbs ul,
 .posts-cta-wrapper,
 .about-cta-wrapper,
-.contact-form {
+.contact-form,
+.single-inputs-wrapper {
   display: flex;
 }
 
@@ -184,7 +198,8 @@ footer,
 .card-wrapper__text-card,
 .footer-wrapper__text-wrapper,
 .about-cta-wrapper,
-.contact-form {
+.contact-form,
+.single-inputs-wrapper {
   flex-direction: column;
 }
 
@@ -205,7 +220,8 @@ footer,
 .popup-img-container,
 .posts-heading,
 .about-cta-wrapper a,
-.contact-form {
+.contact-form,
+.main-contact .contact-back-home {
   width: 100%;
 }
 
@@ -335,10 +351,13 @@ body {
 /* buttons */
 
 .cta {
-  font-weight: 700;
   text-align: center;
   padding: 10px 15px;
   border: none;
+}
+
+.cta:hover {
+  text-decoration: underline;
 }
 
 .cta--purple {
@@ -419,6 +438,10 @@ footer {
 
 .breadcrumbs ul li a {
   margin: 5px 5px;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Header image (all beside index) */

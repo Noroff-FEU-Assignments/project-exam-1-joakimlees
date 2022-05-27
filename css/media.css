@@ -1,28 +1,47 @@
 /* media  */
 
 @media (min-width: 600px) {
-  /*index header*/
-
   .cta-wrapper__cta--purple,
   .cta-wrapper__cta--yellow {
     margin: 0px 20px;
   }
 
-  /* Intro main index*/
-
   .intro-section {
     margin: 0px auto;
   }
 
-  .intro-section p {
+  .text-card__date,
+  .post-date {
+    font-size: 1rem;
+  }
+
+  .main-blogs .blogs-h1 .blogs-h1__blog-posts,
+  .main-blogs .blogs-h1 .blogs-h1__cro,
+  .post-para,
+  .post-link,
+  .intro-section p,
+  .main-about p {
     font-size: 1.3rem;
   }
 
-  .link-wrapper__link {
+  .text-card__read-more,
+  .footer__link {
     font-size: 1.75rem;
   }
 
-  /* cards section index */
+  .blog-post-container h1,
+  .main-about h1 {
+    font-size: 3.1rem;
+  }
+
+  .post-subheading,
+  .card-wrapper__text-card h4 {
+    font-size: 2.3rem;
+  }
+
+  .main-blogs .blogs-h1 .blogs-h1__all {
+    font-size: 3.9rem;
+  }
 
   .card__image img,
   .card-wrapper__text-card {
@@ -33,83 +52,38 @@
     height: 35px;
   }
 
-  .card-wrapper__text-card h4 {
-    font-size: 2.3rem;
-  }
-
-  .text-card__read-more {
-    font-size: 1.75rem;
-  }
-
-  .text-card__date {
-    font-size: 1rem;
-  }
-
-  /* footer */
-
-  .footer__link {
-    font-size: 1.75rem;
-  }
-
-  /*header img */
-
   .post-header-img,
   .blogs-header-img {
     height: 225px;
   }
 
-  /* Blogs site */
-
-  .main-blogs .blogs-h1 .blogs-h1__all {
-    font-size: 3.9rem;
-  }
-
-  .main-blogs .blogs-h1 .blogs-h1__blog-posts {
-    font-size: 1.3rem;
-  }
-
-  .main-blogs .blogs-h1 .blogs-h1__cro {
-    font-size: 1.3rem;
-  }
-
-  /* posts site*/
-
-  .blog-post-container h1 {
-    font-size: 3.1rem;
-  }
-
-  .post-subheading {
-    font-size: 2.3rem;
-  }
-
-  .post-date {
-    font-size: 1rem;
-  }
-
-  .post-para {
-    font-size: 1.3rem;
-  }
-
   .blog-post-img {
     height: 450px;
-  }
-
-  .post-link {
-    font-size: 1.3rem;
-  }
-
-  /* about page */
-
-  .main-about h1 {
-    font-size: 3.1rem;
-  }
-
-  .main-about p {
-    font-size: 1.3rem;
   }
 }
 
 @media (min-width: 800px) {
+  /*font sizes*/
+
+  .image-top__text-wrapper p {
+    font-size: 1rem;
+  }
+
+  .list__link,
+  .cta,
+  .text-card__read-more {
+    font-size: 1.3rem;
+  }
+
+  .card-wrapper__text-card h4,
+  .image-top__text-wrapper h1 {
+    font-size: 1.75rem;
+  }
+
+  .text-card__date {
+    font-size: 0.75rem;
+  }
+
   /*banner and navigation*/
 
   .hamburger-menu-label {
@@ -151,8 +125,6 @@
 
   .list__link {
     font-family: var(--text-cta);
-    font-size: 1.3rem;
-    font-weight: bold;
     list-style: none;
     text-decoration: none;
     color: var(--color-white);
@@ -176,16 +148,7 @@
     margin: 15px 0px 5px 5%;
   }
 
-  .image-top__text-wrapper h1 {
-    font-size: 1.75rem;
-  }
-
-  .image-top__text-wrapper p {
-    font-size: 1rem;
-  }
-
   .cta {
-    font-size: 1.3rem;
     padding: 10px 20px;
   }
 
@@ -198,18 +161,6 @@
 
   .arrow-wrapper img {
     height: 25px;
-  }
-
-  .card-wrapper__text-card h4 {
-    font-size: 1.75rem;
-  }
-
-  .text-card__read-more {
-    font-size: 1.3rem;
-  }
-
-  .text-card__date {
-    font-size: 0.75rem;
   }
 }
 
@@ -239,12 +190,12 @@
 }
 
 @media (min-width: 1200px) {
-  /* banner and navigation*/
+  /* font sizes*/
 
-  /*index header*/
-
-  .main-index__image-top {
-    height: 300px;
+  .main-blogs .blogs-h1 .blogs-h1__blog-posts,
+  .main-blogs .blogs-h1 .blogs-h1__cro,
+  .cta {
+    font-size: 1.75rem;
   }
 
   .image-top__text-wrapper h1 {
@@ -253,6 +204,18 @@
 
   .image-top__text-wrapper p {
     font-size: 1.3rem;
+  }
+
+  .blog-post-container h1,
+  .main-about h1,
+  .main-blogs .blogs-h1 .blogs-h1__all {
+    font-size: 5.5rem;
+  }
+
+  /*index header*/
+
+  .main-index__image-top {
+    height: 300px;
   }
 
   .image-top__text-wrapper {
@@ -265,30 +228,11 @@
   }
 
   .cta {
-    font-size: 1.75rem;
     padding: 10px 15px;
   }
 
   .cta-wrapper__cta--purple,
   .cta-wrapper__cta--yellow {
     margin: 0px 20px;
-  }
-
-  /* blog posts site */
-
-  .main-blogs .blogs-h1 .blogs-h1__all {
-    font-size: 5.5rem;
-  }
-
-  .main-blogs .blogs-h1 .blogs-h1__blog-posts,
-  .main-blogs .blogs-h1 .blogs-h1__cro {
-    font-size: 1.75rem;
-  }
-
-  /* posts site*/
-
-  .blog-post-container h1,
-  .main-about h1 {
-    font-size: 5.5rem;
   }
 }

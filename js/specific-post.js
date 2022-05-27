@@ -27,7 +27,7 @@ function makePostHtml(postObject, container) {
 
   container.innerHTML = `
     <h1 class="post-heading">${postObject.title.rendered}</h1>
-    <p class="post-date">By: ${postObject.acf.author} | Published: ${date} | Last updated: ${updated}</p>
+    <p class="post-date">By: <span class="list--yellow">${postObject.acf.author}</span> | Published: <span class="list--yellow">${date}</span> | Last updated: <span class="list--yellow">${updated}</span></p>
     <p class="post-para post-intro-para">${postObject.acf.intro_para}</p>
     <a class="post-link post-link-intro" href="${postObject.acf.link_intro}">${postObject.acf.link_text_intro}</a>
     <div class="blog-post-img-wrapper post-img-intro">
