@@ -336,7 +336,8 @@ body {
   margin: 25px 0px;
 }
 
-.list__link:hover {
+.list__link:hover,
+.post-link:hover {
   text-decoration: underline;
 }
 

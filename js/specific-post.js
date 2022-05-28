@@ -18,6 +18,8 @@ function postHeadingHtml() {
   `;
 }
 
+console.log(specificPostUrl);
+
 displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
 function makePostHtml(postObject, container) {
