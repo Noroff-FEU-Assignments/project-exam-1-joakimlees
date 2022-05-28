@@ -20,13 +20,9 @@ function postHeadingHtml() {
 
 displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
-console.log(specificPostUrl);
-
 function makePostHtml(postObject, container) {
   const date = postObject.date.slice(0, -9);
   const updated = postObject.modified.slice(0, -9);
-  /* here This  is */
-  /*Safe point*/ //cheky chexk
 
   if (!postObject.acf.img_intro) {
     postObject.acf.img_intro = "";

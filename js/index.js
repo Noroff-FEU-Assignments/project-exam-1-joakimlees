@@ -5,8 +5,10 @@ import addCards from "./components/createCards.js";
 
 const url = "https://joakimlees.no/project-exam-1/wp-json/wp/v2/blog-post?acf_format=standard&per_page=100";
 
+/* calling the getRequest function, which will fetch the the url and converts it to json. declaring it to variable apiResult */
 const apiResult = await getRequest(url);
 
+/* making variables, which will be used for the carousel */
 let count = 1;
 let numberOfCards = 1;
 
