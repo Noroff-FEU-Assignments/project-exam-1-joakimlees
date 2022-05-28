@@ -20,9 +20,32 @@ function postHeadingHtml() {
 
 displayHtml(specificPostUrl, headingPostsImage, postHeadingHtml);
 
+console.log(specificPostUrl);
+
 function makePostHtml(postObject, container) {
   const date = postObject.date.slice(0, -9);
   const updated = postObject.modified.slice(0, -9);
+  /* here This  is */
+  /*Safe point*/ //cheky chexk
+
+  if (!postObject.acf.img_intro) {
+    postObject.acf.img_intro = "";
+  }
+  if (!postObject.acf.img1) {
+    postObject.acf.img1 = "";
+  }
+  if (!postObject.acf.img2) {
+    postObject.acf.img2 = "";
+  }
+  if (!postObject.acf.img3) {
+    postObject.acf.img3 = "";
+  }
+  if (!postObject.acf.img4) {
+    postObject.acf.img4 = "";
+  }
+  if (!postObject.acf.img5) {
+    postObject.acf.img5 = "";
+  }
 
   container.innerHTML = `
     <h1 class="post-heading">${postObject.title.rendered}</h1>
