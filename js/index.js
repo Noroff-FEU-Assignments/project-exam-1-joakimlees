@@ -53,7 +53,6 @@ const cardWrapper = document.querySelector(".card-wrapper");
 const rightBtn = document.querySelector(".arrow-right");
 const leftBtn = document.querySelector(".arrow-left");
 
-console.log(apiResult);
 /*
 param1: the pagination function, which will return x objects from the array.
 param 2: The html-elements, where the "new" html will be made.

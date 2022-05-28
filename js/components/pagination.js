@@ -4,6 +4,7 @@ param2: the amount to display at a time(variables/objects/indexes).
 param 3: the page/counter, which keep track on at what x cards we are at(page).
 */
 export default function pagination(cards, amountDisplayed, page) {
+  /* catching error in the instance of typeError, returning the error (dealing with it in the displayHtml function). */
   if (cards instanceof TypeError) {
     let badCards = cards;
     return badCards;
