@@ -24,6 +24,9 @@ function makePostHtml(postObject, container) {
   const date = postObject.date.slice(0, -9);
   const updated = postObject.modified.slice(0, -9);
 
+  /*checking if the image property is false - if it is the property is an emty string. (tried making a function for this, but for some reason, didn't work - it didn't remove a 404 error, which this code did).
+   */
+
   if (!postObject.acf.img_intro) {
     postObject.acf.img_intro = "";
   }
@@ -120,6 +123,7 @@ hideIfNotProperty(specificPostUrl.acf.img5, ".post-img5");
 const popUpContainer = document.querySelector(".popup-img-container");
 const selectedImage = document.querySelectorAll(".blog-post-img");
 
+/* Looping through the images. On click it creates a img html element inside the popup-img-container/html element. setting it's src to the src of the image clicked on */
 for (let i = 0; i < selectedImage.length; i++) {
   selectedImage[i].addEventListener("click", function () {
     popUpContainer.innerHTML = `<img class="popup-img" src="${selectedImage[i].src}" />`;

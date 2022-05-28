@@ -12,6 +12,7 @@ const blogsContainer = document.querySelector(".blogs-container");
 let count = 1;
 let numberOfCards = 9;
 
+/*See index.js for my documentation on this function */
 displayHtml(pagination(apiResult, numberOfCards, count), blogsContainer, addCards);
 
 const viewMoreBtn = document.querySelector(".view-more-btn");
