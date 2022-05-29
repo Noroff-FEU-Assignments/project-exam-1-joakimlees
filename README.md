@@ -1,6 +1,6 @@
 ## Project Exam 1
 
-## Goal -
+## Goal
 
 To put into practice the skills learned over your first year of studies.
 
