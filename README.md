@@ -84,6 +84,15 @@ git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-joakimlees.gi
 
 Or download and open it with [Github Desktop(download for windows)](https://central.github.com/deployments/desktop/desktop/latest/win32)
 
+## Final reflection
+
+Looking back at the project, I didn't really start off by giving any thought into naming my css classes. Something i realized at the end was a huge mistake. As it became very difficult to have get a DRY written CSS. So for my future projects, I will have to plan better ahead on how I want to organize and write my css styles.
+
+I look at this project, as I do with all my projects. As a stepping stone for me to become a "kick-ass" developer. This projects have generally made me a better developer, and it has improved my skills in especially javascript. My javascript is not perfect by far, but my knowledge and skills are better then before the project.
+This was the first time I made for example a "carousel" and a "pop-up image". I chose to make a carousel with a "pagination" technique, so next time I have a similar task, I'm thinking I'll try making it as a horizontal scroll.
+
+Besides making improvements on my knowledge and skills on html, css, javascript, design etc. Doing bigger projects like this one gives me more experience with working on projects. In terms of planning, time management and so on.
+
 ## Contributing
 
 For any contributions, make sure to open a pull request so that code can be reviewed.
